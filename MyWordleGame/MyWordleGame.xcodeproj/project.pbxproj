@@ -13,6 +13,9 @@
 		2893DA5927F7368D007DE71B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2893DA5727F7368D007DE71B /* Main.storyboard */; };
 		2893DA5B27F7368E007DE71B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2893DA5A27F7368E007DE71B /* Assets.xcassets */; };
 		2893DA5E27F7368E007DE71B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2893DA5C27F7368E007DE71B /* LaunchScreen.storyboard */; };
+		2893DA6B27F73774007DE71B /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2893DA6A27F73774007DE71B /* KeyboardViewController.swift */; };
+		2893DA6E27F73788007DE71B /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2893DA6D27F73788007DE71B /* BoardViewController.swift */; };
+		2893DA7127F74121007DE71B /* KeyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2893DA7027F74121007DE71B /* KeyCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		2893DA5A27F7368E007DE71B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2893DA5D27F7368E007DE71B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2893DA5F27F7368E007DE71B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2893DA6A27F73774007DE71B /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		2893DA6D27F73788007DE71B /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
+		2893DA7027F74121007DE71B /* KeyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		2893DA5027F7368D007DE71B /* MyWordleGame */ = {
 			isa = PBXGroup;
 			children = (
+				2893DA5F27F7368E007DE71B /* Info.plist */,
+				2893DA6827F736F1007DE71B /* Views */,
+				2893DA6727F736DE007DE71B /* Others */,
+				2893DA6627F736D4007DE71B /* Controllers */,
+			);
+			path = MyWordleGame;
+			sourceTree = "<group>";
+		};
+		2893DA6627F736D4007DE71B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2893DA5527F7368D007DE71B /* ViewController.swift */,
+				2893DA6A27F73774007DE71B /* KeyboardViewController.swift */,
+				2893DA6D27F73788007DE71B /* BoardViewController.swift */,
+				2893DA7027F74121007DE71B /* KeyCollectionViewCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2893DA6727F736DE007DE71B /* Others */ = {
+			isa = PBXGroup;
+			children = (
 				2893DA5127F7368D007DE71B /* AppDelegate.swift */,
 				2893DA5327F7368D007DE71B /* SceneDelegate.swift */,
-				2893DA5527F7368D007DE71B /* ViewController.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		2893DA6827F736F1007DE71B /* Views */ = {
+			isa = PBXGroup;
+			children = (
 				2893DA5727F7368D007DE71B /* Main.storyboard */,
 				2893DA5A27F7368E007DE71B /* Assets.xcassets */,
 				2893DA5C27F7368E007DE71B /* LaunchScreen.storyboard */,
-				2893DA5F27F7368E007DE71B /* Info.plist */,
 			);
-			path = MyWordleGame;
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +172,10 @@
 			files = (
 				2893DA5627F7368D007DE71B /* ViewController.swift in Sources */,
 				2893DA5227F7368D007DE71B /* AppDelegate.swift in Sources */,
+				2893DA7127F74121007DE71B /* KeyCollectionViewCell.swift in Sources */,
 				2893DA5427F7368D007DE71B /* SceneDelegate.swift in Sources */,
+				2893DA6B27F73774007DE71B /* KeyboardViewController.swift in Sources */,
+				2893DA6E27F73788007DE71B /* BoardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
