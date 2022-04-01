@@ -108,6 +108,29 @@ extension ViewController : BoardViewControllerDataSource {
         return guesses
     }
     
+    func boxColor (indexpath : IndexPath) -> UIColor? {
+       
+        let indexedAnswer = Array(answer)
+
+        let rowIndex = indexpath.section
+        let count = guesses[rowIndex].compactMap({$0}).count
+        guard count == 5  else {
+            return nil
+        }
+      
+
+        
+        guard let letter  =  guesses[indexpath.section][indexpath.row],
+              indexedAnswer.contains(letter) else {
+            return nil
+        }
+
+        if indexedAnswer[indexpath.row] == letter {
+            return .systemGreen
+        }
+        
+        return .systemOrange
+    }
     
  
 }
